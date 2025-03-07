@@ -1,0 +1,146 @@
+<!DOCTYPE html> <!-- Deklarerar att hemsidan är gjorde i html5 -->
+
+<html lang="sv">
+
+<head>
+	<title> Gammlia Pizzeria </title>
+	<link rel="stylesheet" href="style.css">
+	<meta name="charset" content="UTF-8"> <!--Visar att vi har med ÅÄÖ på hemsidan-->
+	<meta name="author" content="Sebatian Gabrielsson">
+	<meta name="description" content="Gammlia pizzerias hemsida">
+	<meta name="keywords" content="Gammlia pizzeria">
+	<script src="script.js" defer></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+	<nav>
+		<div class="banner baloo">
+			<div class="logo_nav">
+				<img src="img/logo.png" height="75" alt="Logo">
+			</div>
+
+			<div class="navtext">
+				<a href="index.html" style="color: #BF8E06"><strong> <ins> HEM</ins> </strong> </a>
+				<a href="meny.html"><strong>MENY</strong> </a>
+				<a href=" lunch.html"><strong> LUNCH </strong> </a>
+				<a href="avhämtning.html"><strong> AVHÄMTNING </strong> </a>
+				<a href="bildgalleri.html"> <strong> BILDGALLERI </strong> </a>
+				<a href="kontaktaoss.html"><strong> KONTAKTA OSS </strong> </a>
+				<a href="recensioner.html"><strong> RECENSIONER </strong> </a>
+			</div>
+		</div>
+
+		<div class="text_size_container baloo">
+			Textstorlek
+			<div class="button_container">
+				<button id="plus"> + </button>
+				<button id="minus"> - </button>
+				<button id="reset">Återställ</button>
+			</div>
+		</div>
+	</nav>
+
+	<div class="top_background_container box_shadow">
+		<div class="image_container">
+			<img src="img/logo.png" alt="Logo">
+			<p class="yellow text_shadow baloo"><b>Välkommen till Gammlia Pizzeria!
+					Hos oss hittar du smakrika pizzor, fräscha sallader och mycket mer – alltid med färska råvaror och
+					kärlek till mat. Kom in och njut av en god lunch eller en härlig middag i en trivsam miljö. Vi har
+					öppet alla dagar i veckan och ser fram emot att servera dig!
+					Välkommen in!</b></p>
+			<a href="kontaktaoss.html" class="Button baloo">Kontakta oss här</a>
+		</div>
+	</div>
+	<div class="home_meny_container" id="changable">
+		<div class="pizza_container">
+			<div class="pizza_text_container">
+				<h3 class="yellow baloo text_shadow">PIZZOR</h3>
+				<p class="yellow baloo text_shadow">
+					Är du sugen på pizza? <a href="meny.html#start_meny"><b><ins>Kolla in vår meny</ins></b></a> här och
+					hitta din favorit!
+				</p>
+			</div>
+		</div>
+		<div class="vegetarisk_container">
+			<div class="pizza_text_container">
+				<h3 class="yellow baloo text_shadow">VEGETARISKA PIZZOR</h3>
+				<p class="yellow baloo text_shadow">
+					Är du ute efter en vegetarisk pizza? <a href="meny.html#vegetarian_meny"><b><ins>Kolla in vår
+								meny</ins></b></a> här och hitta din gröna favorit!
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="recensioner_container">
+		<div class="recensioner_textbox">
+			<h2 class="baloo ">Recensioner</h2>
+				<p class="baloo2 ">Vill du berätta om ditt senaste besök eller läsa om andras?</p>
+				<a href="recensioner.html" class="Button baloo">Se våra recensioner</a>
+		</div>
+	</div>
+	<div class="bildgalleri_title_container">
+		<h1 class="baloo text_shadow yellow"><a href="bildgalleri.html"></a><ins><b>BILDGALLERI</b></ins></h1>
+	</div>
+	<div class="bildgalleri_container">
+		<div class="left_container">
+			<div class="small_pictures_container">
+				<img src="img/bildgalleri/bild1.png" alt="pizza">
+				<img src="img/bildgalleri/bild2.png" alt="pizza">
+			</div>
+			<div class="big_pictures_container">
+				<img src="img/bildgalleri/bild3.png" alt="pizza">
+			</div>
+		</div>
+		<div class="right_container">
+			<div class="big_pictures_container">
+				<img src="img/bildgalleri/bild6.png" alt="pizza">
+			</div>
+			<div class="small_pictures_container">
+				<img src="img/bildgalleri/bild4.png" alt="pizza">
+				<img src="img/bildgalleri/bild5.png" alt="pizza">
+			</div>
+		</div>
+	</div>
+	<div class="table_link_container">
+		<div class="table_link_textbox yellow text_shadow red_fade baloo">
+			<a href="table.html"><h2>Hittade inget bra ställe att lägga in en tabell så visar det här</h2></a>
+		</div>
+	</div>
+	<div id="scroll_top" class="baloo review_gray box_shadow">Skrolla längst upp</div>
+	<footer>
+		<div class="logo_footer">
+			<img src="img/logo.png" height="55" alt="logo">
+		</div>
+		<div class="footer_container">
+			<div class="footer_textbox baloo2">
+				<h3 class="baloo yellow"><strong>ÖPPETTIDER</strong></h3>
+				<ul class="white">
+					<li data-day="1,2,3,4">Mån - Tors &nbsp; &nbsp; &nbsp;10:30-20:00  <span class="red_dot"></span>&nbsp;</li>
+					<li data-day="5"> Fre &nbsp; &nbsp; &nbsp; 10:00 - 20:00 <span class="red_dot"> </span>&nbsp;</li>
+					<li data-day="6,0"> Lör - Sön &nbsp; &nbsp; &nbsp; 12:00 - 20:00 <span class="red_dot"> </span>&nbsp; </li>
+				</ul>
+			</div>
+
+			<div class="footer_textbox baloo2">
+				<h3 class="baloo yellow"><strong>NAVIGERING</strong></h3>
+				<ul class="white">
+					<li> <a href="recensioner.html"> RECENSIONER</a> </li>
+					<li> <a href="meny.html"> MENY </a></li>
+					<li> <a href="kontaktaoss.html"> KONTAKTA OSS </a> </li>
+				</ul>
+			</div>
+
+			<div class="footer_textbox baloo2">
+				<h3 class="baloo yellow"><strong>KONTAKA OSS</strong></h3>
+				<ul class="white">
+					<li>090-77 53 05&nbsp;</li>
+					<li>info@gammliapizzeria.se&nbsp; </li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+
+</body>
+
+</html>

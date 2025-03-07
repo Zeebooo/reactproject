@@ -1,0 +1,382 @@
+<!DOCTYPE html> <!-- Deklarerar att hemsidan är gjorde i html5 -->
+
+<html lang="sv">
+
+
+<head>
+	<title> Gammlia Pizzeria | Meny </title>
+	<link rel="stylesheet" href="style.css">
+	<meta name="charset" content="UTF-8"> <!--Visar att vi har med ÅÄÖ på hemsidan-->
+	<meta name="author" content="Sebatian Gabrielsson">
+	<meta name="description" content="Gammlia pizzerias meny">
+	<meta name="keywords" content="Gammlia pizzeria meny">
+	<script src="script.js" defer></script>
+	<script src="pizzamaker.js" defer></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+	<nav>
+		<div class="banner baloo">
+			<div class="logo_nav">
+				<img src="img/logo.png" height="75" alt="logo">
+			</div>
+
+			<div class="navtext">
+				<a href="index.html"><strong> HEM </strong> </a>
+				<a href="meny.html" style="color: #BF8E06"><strong> <ins> MENY </ins> </strong> </a>
+				<a href="lunch.html"><strong> LUNCH </strong> </a>
+				<a href="avhämtning.html"><strong> AVHÄMTNING </strong> </a>
+				<a href="bildgalleri.html"><strong> BILDGALLERI </strong> </a>
+				<a href="kontaktaoss.html"><strong> KONTAKTA OSS </strong> </a>
+				<a href="recensioner.html"><strong> RECENSIONER </strong> </a>
+			</div>
+		</div>
+
+		<div class="text_size_container baloo">
+			Textstorlek
+			<div class="button_container">
+				<button id="plus"> + </button>
+				<button id="minus"> - </button>
+				<button id="reset">Återställ</button>
+			</div>
+		</div>
+	</nav>
+
+	<div id="start_meny" class="page_title_container">
+		<img src="img/meny/meny_titel.png" height="100" alt="title of the page">
+		<div class="random_pizza_container box_shadow">
+			<h2 class="baloo text_shadow yellow">Skapa din egen pizza!</h3>
+			<div class="pizza_display_container">
+				<div class="ingrediant_container yellow">
+					<h3 class="baloo text_shadow">Protein</h5>
+						<p class="baloo2 text_shadow" id="protein_text">Inget valt</p>
+						<div class="Button baloo" id="random_protein">Slumpa</div>
+				</div>
+				<div class="ingrediant_container yellow">
+					<h3 class="baloo text_shadow">Grönsaker</h5>
+						<p class="baloo2 text_shadow" id="vegetable_text">Inget valt</p>
+						<div class="Button baloo" id="random_vegetable">Slumpa</div>
+				</div>
+				<div class="ingrediant_container yellow">
+					<h3 class="baloo text_shadow">Sås</h5>
+						<p class="baloo2 text_shadow" id="sauce_text">Inget valt</p>
+						<div class="Button baloo" id="random_sauce">Slumpa</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div class="meny_container">
+		<div class="meny_title_container red_fade box_shadow">
+			<div class="meny_title_container_content baloo yellow bold">
+				<h3 class="text_shadow">PIZZOR</h3>
+				<img src="img/meny/pizza.png" alt="pizza">
+			</div>
+		</div>
+
+		<!-- KOD PIZZOR -->
+
+		<div class="meny_options_container">
+			<div class="meny_textbox text_shadow">
+				<div class="pizza_name baloo yellow bold">
+					<p>1. MARGERITA</p>
+				</div>
+				<div class="pizza_ingredients baloo2 white">
+					<p> Ost </p>
+				</div>
+			</div>
+			<div class="price_textbox baloo2 yellow bold text_shadow">
+				<p> 99:- </p>
+			</div>
+		</div>
+		<div class="meny_divider box_shadow red_fade"></div>
+
+		<div class="meny_options_container">
+			<div class="meny_textbox text_shadow">
+				<div class="pizza_name baloo yellow bold">
+					<p>2. VESUVIO</p>
+				</div>
+				<div class="pizza_ingredients baloo2 white">
+					<p> Ost, skinka </p>
+				</div>
+			</div>
+			<div class="price_textbox baloo2 yellow bold text_shadow">
+				<p> 109:- </p>
+			</div>
+		</div>
+		<div class="meny_divider box_shadow red_fade"></div>
+
+		<div class="meny_options_container">
+			<div class="meny_textbox text_shadow">
+				<div class="pizza_name baloo yellow bold">
+					<p>3. SORENA</p>
+				</div>
+				<div class="pizza_ingredients baloo2 white">
+					<p> Räkor, färska champinjoner </p>
+				</div>
+			</div>
+			<div class="price_textbox baloo2 yellow bold text_shadow">
+				<p> 115:- </p>
+			</div>
+		</div>
+		<div class="meny_divider box_shadow red_fade"></div>
+
+		<div class="meny_options_container">
+			<div class="meny_textbox text_shadow">
+				<div class="pizza_name baloo yellow bold">
+					<p>4. CAPRIOCCIOSA</p>
+				</div>
+				<div class="pizza_ingredients baloo2 white">
+					<p> Skinka, färska champinjoner </p>
+				</div>
+			</div>
+			<div class="price_textbox baloo2 yellow bold text_shadow">
+				<p> 115:- </p>
+			</div>
+		</div>
+		<div class="meny_divider box_shadow red_fade"></div>
+
+		<div class="meny_options_container">
+			<div class="meny_textbox text_shadow">
+				<div class="pizza_name baloo yellow bold">
+					<p>5. HAWAII </p>
+				</div>
+				<div class="pizza_ingredients baloo2 white">
+					<p> Skinka, ananas </p>
+				</div>
+			</div>
+			<div class="price_textbox baloo2 yellow bold text_shadow">
+				<p> 115:- </p>
+			</div>
+		</div>
+		<div class="meny_divider box_shadow red_fade"></div>
+
+		<div class="meny_options_container">
+			<div class="meny_textbox text_shadow">
+				<div class="pizza_name baloo yellow bold">
+					<p>6. BUSSOLA</p>
+				</div>
+				<div class="pizza_ingredients baloo2 white">
+					<p> Skinka, räkor </p>
+				</div>
+			</div>
+			<div class="price_textbox baloo2 yellow bold text_shadow">
+				<p> 115:- </p>
+			</div>
+		</div>
+		<div class="meny_divider box_shadow red_fade"></div>
+
+		<div class="meny_options_container">
+			<div class="meny_textbox text_shadow">
+				<div class="pizza_name baloo yellow bold">
+					<p>7. ALTONE</p>
+				</div>
+				<div class="pizza_ingredients baloo2 white">
+					<p> Tonfisk, lök </p>
+				</div>
+			</div>
+			<div class="price_textbox baloo2 yellow bold text_shadow">
+				<p> 115:- </p>
+			</div>
+		</div>
+		<div class="meny_divider box_shadow red_fade"></div>
+
+		<div class="meny_options_container">
+			<div class="meny_textbox text_shadow">
+				<div class="pizza_name baloo yellow bold">
+					<p>8. DISCO</p>
+				</div>
+				<div class="pizza_ingredients baloo2 white">
+					<p> Köttfärs. färsk vitlök, färska tomater</p>
+				</div>
+			</div>
+			<div class="price_textbox baloo2 yellow bold text_shadow">
+				<p> 115:- </p>
+			</div>
+		</div>
+		<div class="meny_divider box_shadow red_fade"></div>
+
+		<div class="meny_options_container">
+			<div class="meny_textbox text_shadow">
+				<div class="pizza_name baloo yellow bold">
+					<p>9. MALIN SPECIAL</p>
+				</div>
+				<div class="pizza_ingredients baloo2 white">
+					<p> Skinka, lök, vitlök, ruccola, bearnaisesås</p>
+				</div>
+			</div>
+			<div class="price_textbox baloo2 yellow bold text_shadow">
+				<p> 119:- </p>
+			</div>
+		</div>
+		<div class="meny_divider box_shadow red_fade"></div>
+
+		<div class="meny_options_container">
+			<div class="meny_textbox text_shadow">
+				<div class="pizza_name baloo yellow bold">
+					<p>10. MILANO</p>
+				</div>
+				<div class="pizza_ingredients baloo2 white">
+					<p> Färska champinjoner, köttfärs, lök</p>
+				</div>
+			</div>
+			<div class="price_textbox baloo2 yellow bold text_shadow">
+				<p> 119:- </p>
+			</div>
+		</div>
+		<div class="meny_divider box_shadow red_fade"></div>
+
+		<div class="meny_options_container">
+			<div class="meny_textbox text_shadow">
+				<div class="pizza_name baloo yellow bold">
+					<p>11. MARINARA</p>
+				</div>
+				<div class="pizza_ingredients baloo2 white">
+					<p> Räkor, tonfisk, musslor </p>
+				</div>
+			</div>
+			<div class="price_textbox baloo2 yellow bold text_shadow">
+				<p> 124:- </p>
+			</div>
+		</div>
+		<div class="meny_divider box_shadow red_fade"></div>
+
+		<div class="meny_options_container">
+			<div class="meny_textbox text_shadow">
+				<div class="pizza_name baloo yellow bold">
+					<p>12. VENEZIA</p>
+				</div>
+				<div class="pizza_ingredients baloo2 white">
+					<p> Köttfärs, lök, paprika, ägg </p>
+				</div>
+			</div>
+			<div class="price_textbox baloo2 yellow bold text_shadow">
+				<p> 124:- </p>
+			</div>
+		</div>
+		<div class="meny_divider box_shadow red_fade"></div>
+
+		<div class="meny_options_container">
+			<div class="meny_textbox text_shadow">
+				<div class="pizza_name baloo yellow bold">
+					<p>13. MAXIM</p>
+				</div>
+				<div class="pizza_ingredients baloo2 white">
+					<p> Skinka, räkor, färska champinjoner </p>
+				</div>
+			</div>
+			<div class="price_textbox baloo2 yellow bold text_shadow">
+				<p> 124:- </p>
+			</div>
+		</div>
+
+		<!-- KOD VEGETARISKA PIZZOR -->
+
+		<div id="vegetarian_meny" class="meny_title_container green_fade box_shadow">
+			<div class="meny_title_container_content baloo yellow bold">
+				<h3 class="text_shadow">VEGETARISKA PIZZOR</h3>
+				<img src="img/meny/vegetariskpizza.png" alt="vegetarisk pizza">
+			</div>
+		</div>
+
+		<div class="meny_options_container">
+			<div class="meny_textbox text_shadow">
+				<div class="pizza_name baloo yellow bold">
+					<p>14. TUMBA</p>
+				</div>
+				<div class="pizza_ingredients baloo2 white">
+					<p> Färska champinjoner </p>
+				</div>
+			</div>
+			<div class="price_textbox baloo2 yellow bold text_shadow">
+				<p> 104:- </p>
+			</div>
+		</div>
+		<div class="meny_divider box_shadow green_fade"></div>
+
+		<div class="meny_options_container">
+			<div class="meny_textbox text_shadow">
+				<div class="pizza_name baloo yellow bold">
+					<p>15. BAHAMAS</p>
+				</div>
+				<div class="pizza_ingredients baloo2 white">
+					<p> Färsk ananas, banan, curry </p>
+				</div>
+			</div>
+			<div class="price_textbox baloo2 yellow bold text_shadow">
+				<p> 109:- </p>
+			</div>
+		</div>
+		<div class="meny_divider box_shadow green_fade"></div>
+
+		<div class="meny_options_container">
+			<div class="meny_textbox text_shadow">
+				<div class="pizza_name baloo yellow bold">
+					<p>16. FALAFELPIZZA</p>
+				</div>
+				<div class="pizza_ingredients baloo2 white">
+					<p> Falafal, tomat, peperoni, lök, vitlöksås</p>
+				</div>
+			</div>
+			<div class="price_textbox baloo2 yellow bold text_shadow">
+				<p> 124:- </p>
+			</div>
+		</div>
+		<div class="meny_divider box_shadow green_fade"></div>
+
+		<div class="meny_options_container">
+			<div class="meny_textbox text_shadow">
+				<div class="pizza_name baloo yellow bold">
+					<p>17. SPENATPIZZA</p>
+				</div>
+				<div class="pizza_ingredients baloo2 white">
+					<p> Färska champinjoner, lök, fetaost, kalamataoliver, spenat, färsk vitlök </p>
+				</div>
+			</div>
+			<div class="price_textbox baloo2 yellow bold text_shadow">
+				<p> 115:- </p>
+			</div>
+		</div>
+		<div class="meny_divider box_shadow green_fade"></div>
+
+	</div>
+	<div id="scroll_top" class="baloo review_gray box_shadow">Skrolla längst upp</div>
+
+	<footer>
+		<div class="logo_footer">
+			<img src="img/logo.png" height="55" alt="logo">
+		</div>
+		<div class="footer_container">
+			<div class="footer_textbox baloo2">
+				<h3 class="baloo yellow"><strong>ÖPPETTIDER</strong></h3>
+				<ul class="white">
+					<li data-day="1,2,3,4">Mån - Tors &nbsp; &nbsp; &nbsp;10:30-20:00  <span class="red_dot"></span>&nbsp;</li>
+					<li data-day="5"> Fre &nbsp; &nbsp; &nbsp; 10:00 - 20:00 <span class="red_dot"> </span>&nbsp;</li>
+					<li data-day="6,0"> Lör - Sön &nbsp; &nbsp; &nbsp; 12:00 - 20:00 <span class="red_dot"> </span>&nbsp; </li>
+				</ul>
+			</div>
+
+			<div class="footer_textbox baloo2">
+				<h3 class="baloo yellow"><strong>NAVIGERING</strong></h3>
+				<ul class="white">
+					<li> <a href="recensioner.html"> RECENSIONER</a> </li>
+					<li> <a href="meny.html"> MENY </a></li>
+					<li> <a href="kontaktaoss.html"> KONTAKTA OSS </a> </li>
+				</ul>
+			</div>
+
+			<div class="footer_textbox baloo2">
+				<h3 class="baloo yellow"><strong>KONTAKA OSS</strong></h3>
+				<ul class="white">
+					<li>090-77 53 05&nbsp;</li>
+					<li>info@gammliapizzeria.se&nbsp; </li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+</body>
+
+</html>
