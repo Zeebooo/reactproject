@@ -104,6 +104,10 @@ table {
 	box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
 }
 
+.black {
+	color: black;
+}
+
 #scroll_top {
 	display: none;
 	position: fixed;
@@ -314,7 +318,33 @@ footer{
 
 .price_textbox{
 	font-size: 15pt;
+	display: flex;
+	gap: 35px;
 }
+
+.like_button_container {
+	padding: 20px 0;
+	display: flex;
+	align-items: center;
+}
+
+.like_button_container button{
+	background: none;
+	display: flex;
+	padding: 0;
+}
+
+.like_button_container p {
+	margin: 0;
+	font-size: 12pt;
+}
+
+.like_button {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+	cursor: pointer;
+  }
 
 .meny_divider {
 	margin: 0 0.5vw 0 0.5vw;

@@ -2,6 +2,7 @@ import React from "react";
 import { HashLink as Link } from 'react-router-hash-link';
 
 
+
 class Home extends React.Component{
 	render() {
 		return(
@@ -36,8 +37,8 @@ class Home extends React.Component{
 				</div>
 			</div><div className="recensioner_container">
 				<div className="recensioner_textbox">
-					<h2 className="baloo ">Recensioner</h2>
-					<p className="baloo2 ">Vill du berätta om ditt senaste besök eller läsa om andras?</p>
+					<h2 className="baloo black">Recensioner</h2>
+					<p className="baloo2 black">Vill du berätta om ditt senaste besök eller läsa om andras?</p>
 					<Link to="/recensioner" className="Button baloo">Se våra recensioner</Link>
 				</div>
 			</div><div className="bildgalleri_title_container">
